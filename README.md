@@ -22,7 +22,7 @@ sdi2400999,my-github-username,Όνομα Επώνυμο
 Συμπληρώστε `[x]` στις ασκήσεις (και τυχόν bonus) που παραδίδετε.
 
 - [x] Άσκηση 1
-- [ ] Άσκηση 2
+- [x] Άσκηση 2
 - [ ] Άσκηση 3
 - [ ] Άσκηση 4
 - [ ] Άσκηση 5
@@ -56,12 +56,13 @@ sdi2400999,my-github-username,Όνομα Επώνυμο
   - mpq_destroy:
     Αρχικά ελευθερώνουμε τη μνήμη για την εσωτερική δομή (pqueue) χρησιμοποιώντας την έτοιμη συνάρτηση pqueue_destroy και μετά ελευθερώνουμε τη μνήμη του ίδιου του struct
 
-  ΣΥΝΑΡΤΗΣΗ | ΠΟΛΥΠΛΟΚΟΤΗΤΑ 
-  mpq_create | O(1)
-  mpq_size | O(1)
-  mpq_max | O(1)
-  mpq_insert | O(logn)
-  mpq_remove_max | O(logn)
-  mpq_merge | O(mlog(n + m))
-  mpq_set_destroy_value | O(1)
-  mpq_destroy | O(n)
+  | ΣΥΝΑΡΤΗΣΗ | ΠΟΛΥΠΛΟΚΟΤΗΤΑ | ΕΠΕΞΗΓΗΣΗ |
+  | :---: | :---: | :---: |  
+  | mpq_create | $O(1)$ | Δημιουργία κενής δομής |
+  | mpq_size | $O(1)$ | Επιστροφή του size |
+  | mpq_max | $O(1)$ | Επιστροφή του max |
+  | mpq_insert | $O(logn)$ | Εισαγωγή και αναδιοργάνωση του heap |
+  | mpq_remove_max | $O(logn)$ | Αφαίρεση και αναδιοργάνωση του heap |
+  | mpq_merge | $O(mlog(n + m))$ |  Μεταφορά m στοιχείων από την mpq2 στην mpq |
+  | mpq_set_destroy_value | $O(1)$ | Αλλαγή ενός δείκτη συνάρτησης μέσα στο struct |
+  | mpq_destroy | $O(n)$ | Αποδέσμευση μνήμης για όλα τα n στοιχεία της ουράς |
