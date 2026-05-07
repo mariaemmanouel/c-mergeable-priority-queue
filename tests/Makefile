@@ -8,10 +8,10 @@ COMMON = ADTMPQ_test.o $(MODULES)/ADTMPQ_aux.o $(MODULES)/UsingDynamicArray/ADTV
 #UsingADTPiorityQueue_ADTMPQ_test_OBJS = $(COMMON) $(MODULES)/UsingADTPriorityQueue/ADTMPQ.o $(MODULES)/UsingHeap/ADTPriorityQueue.o
 
 # Υλοποίηση μέσω συνδεδεμένης λίστας
-UsingLinkedList_ADTMPQ_test_OBJS      = $(COMMON) $(MODULES)/UsingLinkedList/ADTMPQ.o
+#UsingLinkedList_ADTMPQ_test_OBJS      = $(COMMON) $(MODULES)/UsingLinkedList/ADTMPQ.o
 
 # Υλοποίηση μέσω Heap
-#UsingHeap_ADTMPQ_test_OBJS            = $(COMMON) $(MODULES)/UsingHeap/ADTMPQ.o
+UsingHeap_ADTMPQ_test_OBJS            = $(COMMON) $(MODULES)/UsingHeap/ADTMPQ.o
 
 # Υλοποίηση μέσω Binomial Heap
 #UsingBinomialHeap_ADTMPQ_test_OBJS    = $(COMMON) $(MODULES)/UsingBinomialHeap/ADTMPQ.o
